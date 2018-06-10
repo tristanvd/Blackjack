@@ -7,12 +7,17 @@ namespace KillerApp_Casino.Code
 {
 	public class Hand
 	{
-		public IEnumerable<Card> Cards { get; private set; }
-		public Tuple<int, int> ScoreHighLow { get; private set; }
-		public int Score { get; private set; }
-		public bool IsBlackjack { get; private set; }
-		public bool IsBusted { get; private set; }
-		public bool IsSoft { get; private set; }
-		
+		public List<Card> CardsInHand = new List<Card>();
+		public int HandValue { get; set; } = 0;
+
+		public Card GetCard(Deck deck)
+		{
+			Random rnd = new Random();
+			int number = rnd.Next(deck.FullDeck.Count);
+			Card randomcard = deck.FullDeck[number];
+
+			return randomcard;
+		}
+
 	}
 }

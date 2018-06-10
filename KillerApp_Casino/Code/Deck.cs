@@ -7,12 +7,15 @@ namespace KillerApp_Casino.Code
 {
 	public class Deck
 	{
-		protected List<Card> _cards;
-		public IEnumerable<Card> Cards { get { return _cards; } }
+		public List<Card> FullDeck = new List<Card>();
+		public List<Card> AllCardsOnTable = new List<Card>();
+
+		// closed card   public Card card = new Card(Properties.Resources.BlackjackCardBack, 0, "ClosedCard");
+
 
 		public Deck()
 		{
-			_cards = new List<Card>();
+			//get cards from database
 		}
 	}
 }

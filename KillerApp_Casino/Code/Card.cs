@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 
@@ -7,38 +8,17 @@ namespace KillerApp_Casino.Code
 {
 	public class Card
 	{
-		public CardRank Rank { get; private set; }
-		public CardSuit Suit { get; private set; }
+		public int Value { get; set; }
+		public string Type { get; set; }
+		public Image Image { get; set; }
 
-		public Card(CardRank rank, CardSuit suit)
+		public Card(Image img, int value, string type)
 		{
-			Rank = rank;
-			Suit = suit;
+			this.Image = img;
+			Value = value;
+			Type = type;
 		}
-
-		public enum CardRank
-		{
-			Ace = 1,
-			Two = 2,
-			Three = 3,
-			Four = 4,
-			Five = 5,
-			Six = 6,
-			Seven = 7,
-			Eight = 8,
-			Nine = 9,
-			Ten = 10,
-			Jack = 11,
-			Queen = 12,
-			King = 13
-		}
-
-		public enum CardSuit
-		{
-			Club,
-			Diamond,
-			Heart,
-			Spade
-		}
+		
+		
 	}
 }
