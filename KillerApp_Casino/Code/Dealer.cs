@@ -7,5 +7,14 @@ namespace KillerApp_Casino.Code
 {
 	public class Dealer
 	{
+		private Deck deck;
+
+
+
+		public Dealer()
+		{
+			deck = new Deck();
+		}
+
 	}
 }

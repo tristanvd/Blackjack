@@ -13,5 +13,6 @@ namespace KillerApp_Casino.Code
 		public bool IsBlackjack { get; private set; }
 		public bool IsBusted { get; private set; }
 		public bool IsSoft { get; private set; }
+		
 	}
 }

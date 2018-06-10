@@ -201,8 +201,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Code\Card.cs" />
     <Compile Include="Code\Dealer.cs" />
+    <Compile Include="Code\Deck.cs" />
     <Compile Include="Code\Game.cs" />
     <Compile Include="Code\Hand.cs" />
+    <Compile Include="Code\iPlayerAccount.cs" />
     <Compile Include="Code\Player.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BlackjackController.cs" />
